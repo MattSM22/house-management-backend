@@ -19,7 +19,7 @@ const createUser = async (req: Request, res: Response) => {
   }
 };
 
-const signUp = async (req: Request, res: Response) => {
+const signIn = async (req: Request, res: Response) => {
   const body: userTypes = req.body;
 
   const responseDatabase = await loginUser(body);
@@ -66,4 +66,4 @@ const removeUser = async (req: Request, res: Response) => {
   }
 };
 
-export { createUser, listUser, alterUser, removeUser, signUp };
+export { createUser, listUser, alterUser, removeUser, signIn };
